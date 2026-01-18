@@ -1,51 +1,66 @@
-# Welcome to your Expo app 👋
+# 📱 AI Course App - Frontend
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+The frontend of the **AI Course Application** is built with **React Native** and **Expo**, delivering a high-performance cross-platform mobile experience. It handles user interaction, navigates through generated courses, and manages state using modern React hooks and Context/Redux.
 
-## Get started
+## 📂 Folder Structure
 
-1. Install dependencies
+```bash
+frontend/
+├── app/               # Expo Router screens (file-based routing)
+├── components/        # Reusable UI components (Buttons, Cards, Modals)
+├── services/          # API services & helper functions
+├── assets/            # Images, Fonts, and Icons
+├── constants/         # App-wide constants (Colors, Strings)
+└── package.json       # Dependencies and scripts
+```
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (v18 or higher) installed.
+- **Expo Go** app installed on your iOS or Android device.
+- (Optional) **Android Studio** or **Xcode** for running on emulators.
+
+### Installation
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+### Running the App
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Start the development server:
 
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This will ensure the Metro bundler is running. You will see a QR code in the terminal.
 
-## Learn more
+- **Run on Phone:** Scan the QR code using the **Expo Go** app (Android) or Camera app (iOS).
+- **Run on Emulator:** Press `a` for Android or `i` for iOS (requires setup).
+- **Run on Web:** Press `w` to open in the browser.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Other Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Command | Description |
+| :--- | :--- |
+| `npm run android` | Run the app on a connected Android device or emulator |
+| `npm run ios` | Run the app on an iOS simulator |
+| `npm run web` | Run the app in a web browser |
+| `npm run reset-project` | Reset the project cache and start fresh |
 
-## Join the community
+## 📦 Key Dependencies
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# ai-course-app-frontend
+- **expo**: The core framework for React Native.
+- **expo-router**: File-based routing for navigation.
+- **axios**: HTTP client for API requests.
+- **@react-native-google-signin/google-signin**: For Google Authentication.
+- **expo-secure-store**: Securely storing tokens on the device.
